@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 body {
     color: #323232;
     background-color: #EFF0F1;
     font-size: 16px;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 24px;
     margin: 0;
@@ -111,6 +113,9 @@ footer {
     color: white;
 }
 
+.button-text:hover, .button-text:active, .button-text:focus {
+    background-color: rgba(0, 0, 0, 0);
+}
 
 .block-title {
     display: inline-block;
@@ -141,6 +146,10 @@ footer {
 .room-item img {
     width: 100%;
     display: inline-block;
+}
+
+.room-item .button-text:hover, .room-item .button-text:active, .room-item .button-text:focus {
+    color: #323232
 }
 
 .footer-item {
@@ -219,6 +228,8 @@ footer {
     padding: 12px 15px;
     margin-bottom: 15px; 
     display: inline-block;
+    outline: 0;
+    box-sizing: border-box;
 }
 
 .call-form input, button (:not(:first-child)) {
