@@ -35,9 +35,25 @@ figure {
     margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px){
     .container {
         width: 100%;
+    }
+    
+    .social-icons.top {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
     }
 }
 
@@ -91,7 +107,6 @@ footer {
     font-weight: 700;
     line-height: 60px;
     border: 2px solid #3ac4fa;
-    padding: 0 15px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -197,6 +212,12 @@ footer {
     margin: 0 auto;
     margin-top: 44px;
     color: #f7f7f7;
+    overflow: hidden;
+}
+
+.about-us p {
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .bottom-contacts {
