@@ -17,9 +17,9 @@ class Footer extends Component {
                     <li><a href={'mailto:'+ contacts.mail}><i className="fas fa-envelope"></i> {contacts.mail}</a></li>
                 </ul>
                 <div className="social-icons">
-                    <a href="https://vk.com/" className="vk-icon" target="_blank"><i className="fab fa-vk"></i></a>
-                    <a href="https://facebook.com/" className="facebook-icon" target="_blank"><i className="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" className="instagram-icon" target="_blank"><i className="fab fa-instagram"></i></a>
+                    <a href="https://vk.com/" className="vk-icon" target="_blank" rel="noopener noreferrer"><i className="fab fa-vk"></i></a>
+                    <a href="https://facebook.com/" className="facebook-icon" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" className="instagram-icon" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
                 </div>
             </React.Fragment>
         )

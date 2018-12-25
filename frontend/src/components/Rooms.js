@@ -7,8 +7,8 @@ class Rooms extends Component {
         const { roomsData } = this.props;
         
         return roomsData.map(item => {
-            const {id, title, description, image} = item;
-            return <RoomItem key={id} title={title} description={description} image={image} />
+            const {_id, title, description, image} = item;
+            return <RoomItem key={_id} title={title} description={description} image={image} />
         })
 
     }
